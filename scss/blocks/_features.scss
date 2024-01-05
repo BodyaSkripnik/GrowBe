@@ -1,0 +1,52 @@
+.features {
+  padding: 100px 0;
+}
+
+.features__wrapper {
+  display: flex;
+  gap: 2.6%;
+}
+
+.features__item {
+  width: 31.6%;
+  padding: 40px 30px 25px;
+  transition: 0.2s;
+  background: #ffffff;
+  &:hover {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    transform: scale(1.05);
+  }
+}
+
+.features__icon {
+  width: 70px;
+  margin-bottom: 25px;
+}
+
+.features__title {
+  margin-bottom: 17px;
+}
+
+.features__text {
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.features__link {
+  font-size: 11px;
+  color: #000000;
+  font-family: "Gilroy-Bold";
+}
+
+@media (max-width:900px) {
+  
+  .features__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .features__item {
+    max-width: 370px;
+    width: 100%;
+  }
+}

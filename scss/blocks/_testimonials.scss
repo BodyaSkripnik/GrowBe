@@ -1,0 +1,56 @@
+.testimonials {
+  padding: 93px 0 100px;
+  text-align: center;
+}
+
+.testimonials__title {
+  margin-bottom: 19px;
+}
+
+.testimonials__text {
+  max-width: 435px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.testimonials__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonials__item {
+  padding: 28px 30px;
+  border: 2px solid #eeeeee;
+}
+
+.testimonials__item-text {
+    position: relative;
+  max-width: 510px;
+  margin-bottom: 23px;
+  font-family: "Gilroy-Medium";
+  &::after{
+    content: "";
+  position: absolute;
+  width: 42px;
+  height: 30px;
+  background: url(../images/testimonials/quote.png) no-repeat;
+  background-size: contain;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  }
+}
+
+
+
+.testimonials__item-img {
+  max-width: 50px;
+  min-height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials__item-position {
+  color: #888888;
+}
+

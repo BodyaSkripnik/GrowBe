@@ -1,0 +1,45 @@
+.business {
+  padding-top: 127px;
+  background: #fafafa url(../images/business/vectors.svg) center center / cover
+    no-repeat;
+}
+.business__wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.business__inner {
+  max-width: 515px;
+  width: 100%;
+  padding-top: 20px;
+}
+.business__title {
+  margin-bottom: 20px;
+}
+.business__text {
+  margin-bottom: 51px;
+}
+.business__img {
+  width: 62%;
+}
+
+@media (max-width:1000px) {
+  
+  .business {
+    padding-top: 50px;
+  }
+
+  .business__wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .business__inner {
+    max-width: 760px;
+  }
+
+  .business__img {
+    max-width: 650px;
+    width: 100%;
+  }
+}

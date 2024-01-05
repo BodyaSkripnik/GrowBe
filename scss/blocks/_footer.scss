@@ -1,0 +1,78 @@
+.footer {
+  padding: 100px 0 19px;
+  background: #f3f3f3;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.team__item-socials-link--big {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__item-title {
+  margin-bottom: 39px;
+}
+
+.footer__item-text {
+  margin-top: 39px;
+  margin-bottom: 9px;
+  font-family: "Gilroy-Medium";
+}
+
+.footer__item-list {
+  font-family: "Gilroy-SemiBold";
+  line-height: 2.3;
+  padding-left: 15px;
+}
+
+.footer__item--dot{
+    list-style-type: none;
+    padding: 0;
+    span{
+        color: #333333;
+    }
+}
+
+.footer__item-point::marker {
+  color: #f25822;
+}
+
+.footer__text{
+  text-align: center;
+  border-top: 1px solid #CCCCCC;
+  padding-top: 10px;
+}
+
+@media (max-width:800px) {
+  
+  .footer__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__item{
+    &:first-child{
+      order: 1;
+    }
+    &:nth-child(2){
+      order: 3;
+    }
+    &:nth-child(3){
+      order: 4;
+    }
+    &:last-child{
+      order: 2;
+    }
+  }
+}
+
+@media (max-width:400px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

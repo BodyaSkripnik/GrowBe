@@ -1,0 +1,39 @@
+.mail {
+  overflow-x: clip;
+  padding: 138px 0;
+}
+
+.mail__title {
+  margin-bottom: 3px;
+}
+
+.mail__text {
+  margin-bottom: 55px;
+  max-width: 458px;
+}
+
+.input--right {
+  border-radius: 0 50px 50px 0;
+  margin-left: -4px;
+  margin-right: 29px;
+}
+
+.input--left {
+  border-radius: 50px 0 0 50px;
+  border-right: 2px solid #cccccc;
+}
+.mail__img {
+    position: absolute;
+    width: 68%;
+    right: -154px;
+    top: 50%;
+    transform: translate(0, -57%);
+    z-index: -1;
+}
+
+@media (max-width:800px) {
+  .mail__wrapper{
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
